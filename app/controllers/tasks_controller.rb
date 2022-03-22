@@ -24,7 +24,7 @@ class TasksController < ApplicationController
       redirect_to @task, notice: "タスク「#{@task.name}」を登録しました"
     else
       render :new, status: :unprocessable_entity
-    end    
+    end
   end
 
   def update
